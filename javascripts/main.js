@@ -2,7 +2,6 @@
 
 function generatorCard(name, description, image) {
     return {
-        type: 'gen',
         name,
         description,
         html: function() {
@@ -20,7 +19,6 @@ function generatorCard(name, description, image) {
 
 function toolCard(name, description, image) {
     return {
-        type: 'tool',
         name,
         description,
         html: function() {
