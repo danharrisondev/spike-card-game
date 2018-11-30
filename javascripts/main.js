@@ -1,5 +1,3 @@
-
-
 function generatorCard(name, description, image) {
     return {
         name,
