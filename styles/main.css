@@ -1,0 +1,63 @@
+h1 {
+    font-size: 2em;
+}
+
+body {
+    font-size: 1.5em;
+}
+
+.container {
+    margin: 40px;
+}
+
+#cardContainer {
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.card {
+    border: solid 3px #000;
+    border-radius: 10px;
+    float: left;
+    padding: 20px;
+    margin: 20px;
+}
+
+.card.card-tool {
+    background-color: lightpink;
+}
+
+.card.card-tool .description {
+    background: rgb(255, 202, 211);
+}
+
+.card.card-generator {
+    background-color: lightsteelblue;
+}
+
+.card.card-generator .description {
+    background: rgb(197, 217, 243);
+}
+
+.card .image-container {
+    height: 230px;
+    margin: 10px 0px;
+    width: 300px;
+}
+.card img {
+    max-height: 230px;
+    max-width: 300px;
+}
+
+.card .description {
+    border: solid 2px #000;
+    box-sizing: border-box;
+    font-size: 0.8em;
+    height: 150px;
+    padding: 20px;
+    width: 300px;
+}
+
+.card .type {
+    text-align: right;
+}
