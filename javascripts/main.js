@@ -3,7 +3,7 @@ function card(type, name, description, image) {
         'generator': 'Science Generator',
         'tool': 'Tool'
     };
-    
+
     return {
         type,
         name,
@@ -36,8 +36,8 @@ const cards = [
 
 const cardContainer = document.getElementById('cardContainer');
 
-cards.forEach(element => {
+cards.forEach(card => {
     var elementToRender = document.createElement('div');
-    elementToRender.innerHTML = element.html();
+    elementToRender.innerHTML = card.html();
     cardContainer.appendChild(elementToRender);
 });
