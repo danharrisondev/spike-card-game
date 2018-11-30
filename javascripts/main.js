@@ -1,9 +1,9 @@
-const friendlyTypeNames = {
-    'generator': 'Science Generator',
-    'tool': 'Tool'
-};
-
 function card(type, name, description, image) {
+    const friendlyTypeNames = {
+        'generator': 'Science Generator',
+        'tool': 'Tool'
+    };
+    
     return {
         type,
         name,
