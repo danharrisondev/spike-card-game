@@ -1,4 +1,4 @@
-const cards = [
+const AllCards = [
     { type: 'generator', name: 'Space Shuttle', description: 'Basic ship built by USA to get to the ISS.', image: 'https://www.nasa.gov/sites/default/files/thumbnails/image/shuttle_launch.jpg' },
     { type: 'generator', name: 'International Space Station', description: 'Big station in the sky. Sometimes visible from Earth.', image: 'https://img.purch.com/w/660/aHR0cDovL3d3dy5zcGFjZS5jb20vaW1hZ2VzL2kvMDAwLzA1OS83Nzkvb3JpZ2luYWwvc3BhY2Vfc3RhdGlvbl9vdmVyX2VhcnRoLmpwZw==' },
     
@@ -9,5 +9,16 @@ const cards = [
 ];
 
 const cardContainer = document.getElementById('cardContainer');
+const query = document.getElementById('query');
 
-cardContainer.innerHTML = cards.map(card => Card.render(card)).join('');
+function render(q = '') {
+    cardContainer.innerHTML = AllCards
+        .filter(c => c.name.toLowerCase().includes(q.toLowerCase()))
+        .map(c => Card.render(c)).join('');
+}
+
+query.addEventListener('keyup', function() {
+    render(query.value);
+});
+
+render();
