@@ -1,0 +1,16 @@
+h1 {
+    font-size: 2em;
+}
+
+body {
+    font-size: 1.5em;
+}
+
+.container {
+    margin: 40px;
+}
+
+#cardContainer {
+    margin-left: -20px;
+    margin-right: -20px;
+}

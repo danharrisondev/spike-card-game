@@ -1,42 +1,9 @@
-h1 {
-    font-size: 2em;
-}
-
-body {
-    font-size: 1.5em;
-}
-
-.container {
-    margin: 40px;
-}
-
-#cardContainer {
-    margin-left: -20px;
-    margin-right: -20px;
-}
-
 .card {
     border: solid 3px #000;
     border-radius: 10px;
     float: left;
     padding: 20px;
     margin: 20px;
-}
-
-.card.card-tool {
-    background-color: lightpink;
-}
-
-.card.card-tool .description {
-    background: rgb(255, 202, 211);
-}
-
-.card.card-generator {
-    background-color: lightsteelblue;
-}
-
-.card.card-generator .description {
-    background: rgb(197, 217, 243);
 }
 
 .card .image-container {
@@ -60,4 +27,20 @@ body {
 
 .card .type {
     text-align: right;
+}
+
+.card.card-tool {
+    background-color: lightpink;
+}
+
+.card.card-tool .description {
+    background: rgb(255, 202, 211);
+}
+
+.card.card-generator {
+    background-color: lightsteelblue;
+}
+
+.card.card-generator .description {
+    background: rgb(197, 217, 243);
 }
