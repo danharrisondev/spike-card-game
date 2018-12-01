@@ -1,19 +1,19 @@
 .card {
-    border: solid 3px #000;
+    border: solid 5px #000;
     border-radius: 10px;
     float: left;
     padding: 20px;
     margin: 20px;
 }
 
-.card .image-container {
+.card .image {
+    background-position: center;
+    background-size: 160%;
+    border: solid 2px #000;
+    box-sizing: border-box;
     height: 230px;
-    margin: 10px 0px;
+    margin: 10px 0;
     width: 300px;
-}
-.card img {
-    max-height: 230px;
-    max-width: 300px;
 }
 
 .card .description {
